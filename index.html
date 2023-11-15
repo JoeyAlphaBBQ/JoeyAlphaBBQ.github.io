@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <button id="home_btn">Home</button>
+        <button id="add_player_btn">Add Player</button>
+        <button id="edit_name_btn">Edit Player Name</button>
+        <button id="scoreboard_btn">Scoreboard: Off</button>
+    </div>
+    <div id="content">
+        <div class="container" id="add_player">
+            <h1 class="heading">Add player</h1>
+            <form class="info-form" action="">
+                <label for="player_name">Enter player name:</label>
+                <input type="text" id="player_name" value="New Player" placeholder="Enter Player Name">
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <div class="container" id="edit_name">
+            <h1 class="heading">Change Player Name</h1>
+            <form class="info-form" action="">
+                <label for="player_name">Enter new player name:</label>
+                <input type="text" id="new_player_name" placeholder="Enter New Player Name">
+                <input type="submit" value="Update">
+            </form>
+        </div>
+        <div class="container" id ="gameUI">
+            <h1 class="heading">Guess The Number!</h1>
+            <h4 class="info-text">Hi <b><span id="greeting"></span></b>!</h4>
+            Your Guess (1 - 100):
+            <input type="number" class="input" id="guess" placeholder="Enter your guess">
+            <button class="btn" id="btn">Check Guess</button>
+            <h4 class="info-text">Result: <span id="result"></span></h4>
+            <h4 class="info-text">Score: <span id="score">0</span></h4>
+            <h4 class="info-text" id="attempt">Attempt: 0</h4>
+            <h4 class="info-text" id="accuracy">Accuracy: 0%</h4>
+        </div>
+        <div class="container" id="scoreboard">
+            <h1 class="heading">Scoreboard</h1>
+            <h4 class="info-text" id="best_score">Empty</h4>
+            <h4 class="info-text" id="score_content">Empty</h4>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
